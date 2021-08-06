@@ -1,0 +1,8 @@
+# Project exclude paths
+/venv/
+anntaylor-categories.json
+categories.json
+data.json
+products.json
+anntaylor-products.json
+.env
