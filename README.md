@@ -16,7 +16,7 @@ This is a et tool extract data from website
 
 #### Image copy process from anntaylor :
 
-- Copy the "Chromedriver.exe"
+- Copy the "Chromedriver.exe" from project root
 - past in your local path "C:\Users\Username\AppData\Local\Programs\Python\Python37\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe"
 
 #### If chrome not in the program file :
