@@ -19,7 +19,7 @@ This is a et tool extract data from website
 - Copy the "Chromedriver.exe"
 - past in your local path "C:\Users\Username\AppData\Local\Programs\Python\Python37\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe"
 
-####If chrome not in the program file :
+#### If chrome not in the program file :
 - use the following code
 - options = Options()
 - options.binary_location = "chrome path(chrome.exe)"
