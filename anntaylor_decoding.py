@@ -95,7 +95,7 @@ page = requests.get(URL).text
 soup = BeautifulSoup(page, "lxml")
 results = soup.find(name="nav")
 
-Top_elements = results.findAll("div", class_="sub-nav-wrapper")
+# Top_elements = results.findAll("div", class_="sub-nav-wrapper")
 
 cat0_elements = results.find_all("div", class_="sub-nav-wrapper")
 
@@ -132,7 +132,7 @@ def product_loop(subleft_menu):
                 # options.binary_location = "C:\Program Files\Google\Chrome\Application\chrome.exe"
                 # driver = webdriver.Chrome(r"C:\Users\Raghav\AppData\Local\Programs\Python\Python37\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe")
                 driver = webdriver.Chrome(
-                    r"E:\PRASAD\Dasha\chocolate\venv\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe")
+                    r"C:\Users\ashok\AppData\Local\Programs\Python\Python310\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe")
                 # driver = webdriver.Chrome(chrome_options=options, executable_path=r"E:\PRASAD\Dasha\chocolate\venv\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe")
                 # driver = webdriver.Chrome(chrome_options=options, executable_path=r"C:\Users\sulur\AppData\Local\Programs\Python\Python39\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe")
                 driver.get(url)
@@ -304,10 +304,10 @@ def product_loop(subleft_menu):
                     print("baseId:", baseId)
 
                     # Send to aws
-                    icount = 1
-                    for image in product_images.split(";"):
-                        upload_file_to_aws_s3(image, icount)
-                        icount += 1
+                    # icount = 1
+                    # for image in product_images.split(";"):
+                       # upload_file_to_aws_s3(image, icount)
+                        # icount += 1
                     # End
 
                     products.append({"productType": productType, "variantId": variant_count, "sku": sku,
